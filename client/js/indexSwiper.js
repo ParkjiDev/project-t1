@@ -8,7 +8,7 @@ const swiper = new Swiper(".swiper", {
   allowTouchMove: false,
 });
 
-const MAIN_PAGE_URL = "./views/main.html";
+const MAIN_PAGE_URL = "./client/views/main.html";
 const body = getNode("body");
 
 function handleClick() {
