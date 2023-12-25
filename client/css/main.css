@@ -1,0 +1,15 @@
+.main {
+  position: relative;
+  width: 100vw;
+}
+
+.main-text {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #e2012d;
+}
