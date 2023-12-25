@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;800;900&family=Nanum+Myeongjo&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/3809619b32.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -20,14 +24,44 @@
       href="../css/main.css
     "
     />
-    <script src="../js/main.js" defer type="module"></script>
+    <script src="../js/data.js" defer></script>
     <script src="../js/mainSwiper.js" defer type="module"></script>
+    <script src="../js/main.js" defer type="module"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="main">
       <p class="main-text">T1 IS WHERE BEST BELONG</p>
       <img src="../assets/t1_img_01.jpg" alt="" />
+    </div>
+    <div class="center-wrapper">
+      <div class="swiper sample-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-index="1">
+            <img src="../assets/t1_img_zeus_01.png" />
+            <!-- <img src="../assets/t1_img_01.jpg" alt="" /> -->
+          </div>
+          <div class="swiper-slide" data-index="2">
+            <img src="../assets/t1_img_oner_01.png" />
+          </div>
+          <div class="swiper-slide" data-index="3">
+            <img src="../assets/t1_img_faker_01.png" />
+          </div>
+          <div class="swiper-slide" data-index="4">
+            <img src="../assets/t1_img_gumayusi_01.png" />
+          </div>
+          <div class="swiper-slide" data-index="5">
+            <img src="../assets/t1_img_keria_01.png" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="swiper-button-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
     </div>
   </body>
 </html>
