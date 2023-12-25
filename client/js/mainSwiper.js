@@ -1,4 +1,4 @@
-import { getNode } from "../lib/index.js";
+import { getNode, insertFirst } from "../lib/index.js";
 
 const swiper = new Swiper(".swiper", {
   loop: true,
@@ -42,9 +42,16 @@ function changeCenterText(slide) {
   changeText(".profile-team", playerData.team);
   changeText(".profile-lane", playerData.lane);
   changeText(".profile-debut", playerData.debut);
+  changeButtonSrc(".button-shorts", playerData.shortsURL);
+  changeButtonSrc(".button-instagram", playerData.instagramURL);
 }
 
 function changeText(node, text) {
   const textNode = getNode(node);
   textNode.textContent = text;
+}
+
+function changeButtonSrc(node, url) {
+  const button = getNode(node);
+  button.dataset.url = url;
 }

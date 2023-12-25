@@ -130,3 +130,12 @@ body {
   border: 0;
   padding: 0;
 }
+
+.shorts-dialog {
+  width: 400px;
+  padding: 0;
+}
+
+.shorts-dialog::backdrop {
+  backdrop-filter: blur(10px);
+}
